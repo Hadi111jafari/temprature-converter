@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temprature Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Temprature Converter</h1>
+    </header>
+    <main>
+      <div id="container">
+        <div id="container-input">
+          <div id="search-container">
+            <input type="number" id="input" placeholder="Enter Temprature to Convert" />
+            <div id="measure-units">
+                <button id="units" class="dropdown-button">Scale Units</button>
+                <div class="dropdown-content" id="dropdownContent">
+                    <a id="c" class="dropdown-item" href="#">°C</a>
+                    <a id="f" class="dropdown-item" href="#">°F</a>
+                    <a id="k" class="dropdown-item" href="#">K</a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div id="menu-wrapper">
+          <h3>Choose in which scale do you want to convert</h3>
+          <ul id="menu">
+            <li id="toC" class="menu-item">Celcius</li>
+            <li id="toF" class="menu-item">Fahrenheit</li>
+            <li id="toK" class="menu-item">Kelvin</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="result">
+        <h3>Result</h3>
+        <p id="result-in">Your Result displays here.</p>
+      </div>
+
+      <div id="bar"></div>
+    </main>
+    <footer>&copy; 2023 All rights reserved by Hadi</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
